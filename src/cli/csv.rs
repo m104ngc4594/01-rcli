@@ -1,4 +1,4 @@
-use crate::cli::verify_input_file;
+use crate::cli::verify_file;
 use clap::Parser;
 use std::{fmt, str::FromStr};
 
@@ -37,7 +37,7 @@ impl fmt::Display for OutputFormat {
 
 #[derive(Debug, Parser)]
 pub struct CsvOpts {
-    #[arg(short, long, value_parser = verify_input_file )]
+    #[arg(short, long, value_parser = verify_file )]
     pub input: String,
 
     #[arg(short, long)]
