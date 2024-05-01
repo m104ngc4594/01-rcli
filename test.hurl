@@ -1,0 +1,2 @@
+# Test index page
+GET http://localhost:8080/fixtures/ed25519.pk
