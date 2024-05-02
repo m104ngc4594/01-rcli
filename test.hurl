@@ -1,2 +1,5 @@
-# Test index page
-GET http://localhost:8080/fixtures/ed25519.pk
+# Test static file
+GET http://localhost:8080/Cargo.toml
+
+# Test static file with tower-http
+GET http://localhost:8080/tower/fixtures/ed25519.pk
